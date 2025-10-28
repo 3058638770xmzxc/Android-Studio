@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 选中状态 - 蓝色背景，与图片完全匹配 -->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2196F3" />
+        </shape>
+    </item>
+    <!-- 按压状态 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#E3F2FD" />
+        </shape>
+    </item>
+    <!-- 默认状态 - 白色背景，与图片完全匹配 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</selector>

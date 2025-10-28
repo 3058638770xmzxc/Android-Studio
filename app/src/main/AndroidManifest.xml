@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.listviews">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- =============================== -->
+        <!-- 选项1：显示MainActivity（动物列表） -->
+        <!-- 取消下面注释，注释掉其他选项 -->
+        <!-- =============================== -->
+
+
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity1"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        -->
+
+
+        <!-- =============================== -->
+        <!-- 选项2：显示MainActivity1（自定义AlertDialog） -->
+        <!-- 取消下面注释，注释掉其他选项 -->
+        <!-- =============================== -->
+
+
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        -->
+
+
+        <!-- =============================== -->
+        <!-- 选项3：显示MainActivity2（ActionMode上下文菜单） -->
+        <!-- 取消下面注释，注释掉其他选项 -->
+        <!-- =============================== -->
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity1"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+</manifest>
