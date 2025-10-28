@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    android:padding="20dp"
+    android:stretchColumns="*">
+
+    <!-- 标题行 -->
+    <TableRow
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello TableLayout"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_span="2"
+            android:padding="10dp" />
+    </TableRow>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_height="1dp"
+        android:background="#555555"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Open菜单项 -->
+    <TableRow
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Open..."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ctrl-O"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Save菜单项 -->
+    <TableRow
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save..."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ctrl-S"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Save As菜单项 -->
+    <TableRow
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save As..."
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ctrl-Shift-S"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Import菜单项（禁用） -->
+    <TableRow
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="× Import..."
+            android:textSize="16sp"
+            android:textColor="#FF4444"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ctrl-E"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Export菜单项（禁用） -->
+    <TableRow
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="× Export..."
+            android:textSize="16sp"
+            android:textColor="#FF4444"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- 分隔线 -->
+    <View
+        android:layout_height="1dp"
+        android:background="#555555"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp" />
+
+    <!-- Quit菜单项 -->
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quit"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:padding="8dp" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android线性布局实验"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="#1A1A1A"/>
+
+    <!-- 第一行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="one, one"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="one, two"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="one, three"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="one, four"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <!-- 第二行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="two, one"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="two, two"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="two, three"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="two, four"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <!-- 第三行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="three, one"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="three, two"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="three, three"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="three, four"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+    <!-- 第四行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="four, one"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="four, two"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="four, three"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="four, four"
+            android:textAllCaps="false"
+            android:background="#1A1A1A"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_margin="2dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
