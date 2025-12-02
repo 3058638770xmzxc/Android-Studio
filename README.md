@@ -32,10 +32,13 @@
 ![动物列表](screenshots/animal_list_activity.png)
 
 ### 自定义AlertDialog
-![自定义AlertDialog](screenshots/custom_dialog_activity.png)
+![自定义AlertDialog](screenshots/AlertDialog.png)
+
+### ActionMode上下文菜单
+![ActionMode上下文菜单](screenshots/ActionMode.png)
 
 ### 使用XML定义菜单
-![使用XML定义菜单](screenshots/xml_menu_activity.png)
+![使用XML定义菜单](screenshots/XML.png)
 
 ## 关键代码
 
@@ -92,7 +95,49 @@ private void showCustomAlertDialog() {
 }
 ```
 
-### 3. 使用XML定义菜单 - 菜单处理
+### 3. ActionMode上下文菜单 - 多选模式设置
+```java
+// 设置多选模式监听器
+listView.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
+    @Override
+    public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+        // 加载ActionMode菜单
+        mode.getMenuInflater().inflate(R.menu.context_menu, menu);
+        actionMode = mode;
+        updateActionModeTitle();
+        return true;
+    }
+
+    @Override
+    public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+        if (item.getItemId() == R.id.action_delete) {
+            // 删除选中的项目
+            deleteSelectedItems();
+            mode.finish();
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void onItemCheckedStateChanged(ActionMode mode, int position,
+                                         long id, boolean checked) {
+        // 更新选中项目列表
+        if (checked) {
+            if (!selectedItems.contains(position)) {
+                selectedItems.add(position);
+            }
+        } else {
+            selectedItems.remove(Integer.valueOf(position));
+        }
+        updateActionModeTitle();
+    }
+
+    // 其他方法...
+});
+```
+
+### 4. 使用XML定义菜单 - 菜单处理
 ```java
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
@@ -160,11 +205,3 @@ Listviews/
 3. 连接Android设备或启动模拟器
 4. 运行项目
 5. 在AndroidManifest.xml中可以切换不同的启动Activity
-
-## 许可证
-
-MIT License
-
-## 贡献
-
-欢迎提交Issue和Pull Request！
