@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity2 extends AppCompatActivity {
+public class ActionModeActivity extends AppCompatActivity {
 
     private ListView listView;
     private SimpleAdapter adapter;
@@ -31,7 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_action_mode);
 
         initListView();
         setupActionMode();
@@ -141,7 +141,7 @@ public class MainActivity2 extends AppCompatActivity {
                     listView.setItemChecked(position, !listView.isItemChecked(position));
                 } else {
                     // 正常模式下，点击显示详情
-                    Toast.makeText(MainActivity2.this,
+                    Toast.makeText(ActionModeActivity.this,
                             "Clicked: " + itemNames[position], Toast.LENGTH_SHORT).show();
                 }
             }

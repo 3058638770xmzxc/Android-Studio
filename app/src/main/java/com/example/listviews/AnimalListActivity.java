@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class AnimalListActivity extends AppCompatActivity {
 
     private ListView animalListView;
     private Button animalButton;
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_animal_list);
 
         initViews();
         setupListView();
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // 显示点击响应 - 修复Toast显示
                 String message = "你点击了" + animalNames[position] + "动物";
-                Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AnimalListActivity.this, message, Toast.LENGTH_SHORT).show();
 
                 // 更新按钮显示
                 updateAnimalButton();
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 if (selectedAnimalIndex != -1) {
                     // 显示按钮点击响应
                     String message = "查看" + animalNames[selectedAnimalIndex] + "详情";
-                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AnimalListActivity.this, message, Toast.LENGTH_SHORT).show();
 
                     // 发送通知
                     sendNotification(animalNames[selectedAnimalIndex]);
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
     private void sendNotification(String animalName) {
         try {
             // 创建PendingIntent
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, AnimalListActivity.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(
                     this,
                     0,

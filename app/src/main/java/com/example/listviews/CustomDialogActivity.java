@@ -10,12 +10,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity1 extends AppCompatActivity {
+public class CustomDialogActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_custom_dialog);
 
         // 在Activity创建时显示自定义AlertDialog
         showCustomAlertDialog();
@@ -51,7 +51,7 @@ public class MainActivity1 extends AppCompatActivity {
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity1.this, "Login cancelled", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CustomDialogActivity.this, "Login cancelled", Toast.LENGTH_SHORT).show();
                 dialog.dismiss(); // 关闭对话框
             }
         });
@@ -75,7 +75,7 @@ public class MainActivity1 extends AppCompatActivity {
                 }
 
                 // 登录成功处理
-                Toast.makeText(MainActivity1.this,
+                Toast.makeText(CustomDialogActivity.this,
                         "Sign in successful for: " + username, Toast.LENGTH_SHORT).show();
                 dialog.dismiss(); // 关闭对话框
             }
@@ -85,9 +85,12 @@ public class MainActivity1 extends AppCompatActivity {
         dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
             @Override
             public void onCancel(DialogInterface dialog) {
-                Toast.makeText(MainActivity1.this, "Dialog cancelled", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CustomDialogActivity.this, "Dialog cancelled", Toast.LENGTH_SHORT).show();
             }
         });
+
+        // 显示对话框
+        dialog.show();
     }
 
     /**

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#F5F5F5"
-    tools:context=".MainActivity1">
+    tools:context=".CustomDialogActivity">
 
     <TextView
         android:layout_width="wrap_content"
