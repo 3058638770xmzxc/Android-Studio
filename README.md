@@ -1,10 +1,11 @@
 # HelloWorld
 
-一个简单的Android HelloWorld应用，用于演示Android应用开发的基本流程。
+一个简单的Android HelloWorld应用，用于演示Android应用开发的基本流程，包含点击计数功能。
 
 ## 功能介绍
 
 - 显示"Hello World!"文本
+- 点击按钮增加计数
 - 响应式设计，适配不同屏幕尺寸
 
 ## 技术栈
@@ -63,4 +64,5 @@ HelloWorld/
 
 6. 点击运行按钮（绿色三角形）或使用快捷键 `Shift + F10`
 
-## 截图
+### 应用界面
+（这里是一张图片：Hello World应用界面，显示点击次数和点击按钮）
