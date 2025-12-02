@@ -64,5 +64,7 @@ HelloWorld/
 
 6. 点击运行按钮（绿色三角形）或使用快捷键 `Shift + F10`
 
+## 截图
+
 ### 应用界面
-（这里是一张图片：Hello World应用界面，显示点击次数和点击按钮）
+![应用界面](screenshots/B858YI3%EZ(P7WFG2WIL00C.png)
