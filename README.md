@@ -67,4 +67,4 @@ HelloWorld/
 ## 截图
 
 ### 应用界面
-![应用界面](screenshots/B858YI3%EZ(P7WFG2WIL00C.png))
+![应用界面](screenshots/app_screenshot.png)
